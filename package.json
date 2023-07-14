@@ -1,0 +1,29 @@
+{
+  "name": "@quickstart",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "build": "gcloud builds submit --config=cloudbuild.yaml --substitutions=_LOCATION='us-east1',_REPOSITORY='tracker-net-repository'",
+    "artifactregistry-login": "npx google-artifactregistry-auth"
+  },
+  "dependencies": {
+  },
+  "description": "Small node.js to receive and process data from GPSs!",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcha-tcho/testing_router.git"
+  },
+  "keywords": [
+    "router"
+  ],
+  "author": "Eduardo Malpeli",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tcha-tcho/testing_router/issues"
+  },
+  "homepage": "https://github.com/tcha-tcho/testing_router#readme"
+}
