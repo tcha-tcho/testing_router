@@ -1,7 +1,8 @@
 const net = require('net');
 const port = 7070;
 const port2 = 5001;
-const host = '127.0.0.1';
+// const host = '127.0.0.1';
+const host = '0.0.0.0';
 
 const server = net.createServer();
 server.listen(port2, host, () => {
