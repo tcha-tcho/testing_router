@@ -7,6 +7,6 @@ COPY . .
 # install npm dependencies and pm2
 RUN npm install --only=production && npm install -g pm2
 # expose port 80 for our server to run on
-EXPOSE 8080
+EXPOSE 80 8080 7070 5001
 # command to start our server
 CMD [ "pm2-runtime", "start", "server.js" ]
